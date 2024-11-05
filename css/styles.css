@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --font-family-1: 'Oswald';
+    --font-family-2: 'Raleway';
+}
+
+body {
+    background-color: #080909;
+    color: var(--secondary-color);
+    height: 100vh;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #050505;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-right: 35px;
+    font-weight: 700;
+    font-family: var(--font-family-1);
+    font-size: 1.5rem;
+}
+
+.hero__image {
+width: 100%;
+position: relative;
+text-align: center;
+}
+
+.hero__image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.hero__text  {
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    font-family: var(--font-family-1);
+    font-weight: bold;
+    color: var(--secondary-color)
+    
+}
+
+.featured__game__title, .featured__character__title, .gallery__title, .top__five__title  {
+    padding: 2em;
+    text-align: center;
+    font-family: var(--font-family-1);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#pacman-poster  {
+    width: 50%;
+    padding: 3em;
+}
+
+.featured__game__content, .featured__character__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.pacman__game__text, .character__description {
+    padding: 1rem 3rem;
+    font-family: var(--font-family-2);
+}
+
+.pacman__game__title{
+    font-size: 3rem;
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.character__name {
+    font-size: 3rem;
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    padding-left: 3rem;
+}
+.character__image img {
+    padding-right: 6rem;
+}
+
+.gallery__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+.gallery__image {
+    width: 350px;
+    padding: .5rem;
+    transition: 150ms ease;
+}
+.gallery__image:hover {
+    transform: scale(1.05);
+}
+
+.top__five__odd, .top__five__even{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.top__five__odd__image, .top__five__even__image {
+    padding: 3rem;
+    height: 50%;
+}
+.top__character__name, .top__character__description {
+    font-family: var(--font-family-2);
+    font-size: 1rem;   
+}
+
+.top__character__name {
+    font-size: 3rem;
+    font-family: var(--font-family-1);
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--font-family-2);
+    font-size: 1rem;
+}
+
+
+
+
+
